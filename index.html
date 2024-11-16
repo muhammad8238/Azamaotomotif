@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azama Otomotif</title>
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add styles for moving menu items */
+        nav ul li a {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            transform: translateY(-5px);
+            color: #ff1493; /* Neon pink on hover */
+        }
+
+        nav ul li a.active {
+            animation: moveEffect 0.5s ease-in-out infinite;
+        }
+
+        @keyframes moveEffect {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* About Section Text Centering */
+        .navy-glow p {
+            text-align: center;
+        }
+
+        /* Performance Stats - Vertical Layout */
+        .chart {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+.chart-item {
+    background: #0c0725;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Light glow effect */
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    animation: blink 1s linear infinite;
+}
+
+
+        @keyframes blink {
+            0% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); }
+            50% { box-shadow: 0 0 30px rgba(255, 255, 255, 1); }
+            100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); }
+        }
+
+        /* Car Section Styling */
+        .car-card {
+            background: #222;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+            transition: transform 0.3s;
+        }
+        
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(255, 105, 180, 0.7);
+        }
+
+        /* Glowing Effect on Menu */
+        .nav-link:hover {
+            color: #ff1493;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home"><strong>Azama Otomotif</strong></a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#performance-stats" class="nav-link">Performance Stats</a></li>
+            <li><a href="#cars" class="nav-link">Our Cars</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <h1 class="glow-text">Azama Otomotif</h1>
+            <p>Your gateway to luxury and performance cars in Brunei Darussalam.</p>
+            <a href="#cars" class="cta-btn">Explore Cars</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="feature-section">
+            <h2>About Azama Otomotif</h2>
+            <div class="navy-glow">
+                <p style="text-align: center;">Azama Otomotif is a leading provider of high-performance luxury vehicles in Brunei Darussalam. 
+                We specialize in offering cars that are not only about luxury but also cutting-edge 
+                technology and unparalleled performance.</p>
+            </div>
+        </section>
+
+        <!-- Performance Stats Section -->
+        <section id="performance-stats" class="chart-section">
+            <h2 style="text-align: center;">Performance Stats</h2>
+            <div class="chart">
+                <div class="chart-item navy-glow">
+                    <h3>Speed</h3>
+                    <p>Speed is a critical factor in the performance of luxury vehicles. Azama Otomotif provides cars that achieve outstanding top speeds, ensuring thrilling performance and a superior driving experience.</p>
+                </div>
+                <div class="chart-item navy-glow">
+                    <h3>Power</h3>
+                    <p>Power is the heart of high-performance vehicles. Our cars feature powerful engines that deliver remarkable horsepower for an unmatched driving experience on both roads and tracks.</p>
+                </div>
+                <div class="chart-item navy-glow">
+                    <h3>Torque</h3>
+                    <p>Torque is essential for acceleration and handling. Our vehicles are engineered to provide superior torque, ensuring optimal performance when you need it most.</p>
+                </div>
+                <div class="chart-item navy-glow">
+                    <h3>Acceleration</h3>
+                    <p>Acceleration is key for fast starts and responsive driving. Our luxury cars accelerate with incredible speed, giving you the power to go from 0 to 100 km/h in seconds.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cars Section -->
+        <section id="cars" class="grid-section">
+            <h2 style="text-align: center;">Our Cars</h2>
+            <div class="grid">
+                <div class="car-card">
+                    <img src="https://p4.wallpaperbetter.com/wallpaper/884/592/2/ferrari-laferrari-2014-wallpaper-preview.jpg" alt="Car Model 1">
+                    <h3>Model A</h3>
+                    <p>Price: BND 1.453.876</p>
+                    <div class="car-glow"></div>
+                </div>
+                <div class="car-card">
+                    <img src="https://vignette.wikia.nocookie.net/automobile/images/b/b9/Large_Image_52.jpg/revision/latest?cb=20160714013608" alt="Car Model 2">
+                    <h3>Model B</h3>
+                    <p>Price: BND 3.436..675</p>
+                    <div class="car-glow"></div>
+                </div>
+                <div class="car-card">
+                    <img src="c:\Users\mqalb\Downloads\Leonardo_Phoenix_Buatlah_serangkaian_satu_gambar_hypercar_yan_1.jpg" alt="Car Model 3">
+                    <h3>Model C</h3>
+                    <p>Price: BND 5.245.144</p>
+                    <div class="car-glow"></div>
+                </div>
+                <div class="car-card">
+                    <img src="c:\Users\mqalb\Downloads\Leonardo_Phoenix_Buatlah_serangkaian_satu_gambar_hypercar_yan_0.jpg" alt="Car Model 3">
+                    <h3>Model D</h3>
+                    <p>Price: BND 12.564.245</p>
+                    <div class="car-glow"></div>
+                </div>
+                <div class="car-card">
+                    <img src="c:\Users\mqalb\Downloads\Leonardo_Phoenix_Buatlah_serangkaian_satu_gambar_hypercar_yan_0 (1).jpg" alt="Car Model 3">
+                    <h3>Model E</h3>
+                    <p>Price: BND 6.532.564</p>
+                    <div class="car-glow"></div>
+                </div>
+                <div class="car-card">
+                    <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/s250a55b98f0a44f9/image/i6e51cbb2d25559df/version/1557656078/image.jpg" alt="Car Model 3">
+                    <h3>Model F</h3>
+                    <p>Price: BND 9.356.314</p>
+                    <div class="car-glow"></div>
+                </div>
+                <div class="car-card">
+                    <img src="c:\Users\mqalb\Downloads\Leonardo_Phoenix_Buatlah_serangkaian_satu_gambar_hypercar_yan_1 (1).jpg" alt="Car Model 3">
+                    <h3>Model G</h3>
+                    <p>Price: BND 5.345.145</p>
+                    <div class="car-glow"></div>
+                </div>
+                <div class="car-card">
+                    <img src="https://cdn1.npcdn.net/userfiles/26050/file/IMG_4.png" alt="Car Model 3">
+                    <h3>Model H</h3>
+                    <p>Price: BND 6.456.425</p>
+                    <div class="car-glow"></div>
+                </div>
+                <div class="car-card">
+                    <img src="c:\Users\mqalb\Downloads\Leonardo_Phoenix_Buatlah_serangkaian_satu_gambar_hypercar_yan_0.jpg" alt="Car Model 3">
+                    <h3>Model I</h3>
+                    <p>Price: BND 3.234.524</p>
+                    <div class="car-glow"></div>
+                </div>
+                <div class="car-card">
+                    <img src="https://images.hgmsites.net/hug/ssc-tuatara_100706037_h.jpg" alt="Car Model 3">
+                    <h3>Model J</h3>
+                    <p>Price: BND 4.245.654</p>
+                    <div class="car-glow"></div>
+                </div>
+               
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="feature-section">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:azamamatulezi@gmail.com">azama.matulezi@gmail.com</a></p>
+            <p>Address: Brunei Darussalam</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2022 Azama Otomotif. Brunei Darussalam.</p>
+    </footer>
+</body>
+</html>
